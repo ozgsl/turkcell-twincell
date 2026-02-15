@@ -1,34 +1,16 @@
-# TWINCELL
-## 5G Baz İstasyonları için Edge Tabanlı Dijital İkiz Karar Destek Platformu
+# TWINCELL – Dijital İkiz Dashboard (MVP)
 
-# Genel Bakış
-TWINCELL, 5G baz istasyonlarının operasyonel davranışlarını dijital ikiz teknolojisi
-kullanarak modelleyen bir karar destek platformudur. Sistem; trafik, enerji tüketimi
-ve hizmet kalitesi (QoS) odaklı what-if simülasyonlarının gerçekleştirilmesini sağlar.
+Bu proje, 5G baz istasyonları için dijital ikiz yaklaşımıyla senaryo simülasyonu, kısa vadeli trafik tahmini ve enerji/QoS analizini sağlayan Streamlit tabanlı bir MVP'dir.
 
-# Problem
-5G mobil ağlar, zamana ve bölgeye bağlı olarak sürekli değişen trafik desenleri ve
-artan enerji maliyetleriyle karşı karşıyadır. Reaktif ağ yönetimi yaklaşımları,
-verimsizliklere ve sürdürülebilirlik sorunlarına yol açmaktadır.
+## Özellikler
+- Sentetik veri ile birden fazla baz istasyonu simülasyonu
+- Senaryolar:
+  - Referans
+  - Enerji Tasarruf Modu (TX güç/taşıyıcı azaltımı etkisi)
+  - Komşuya Yük Aktarma (offload)
+- KPI'lar: Ortalama Güç, Toplam Enerji, Toplam Trafik, Enerji/GB, Ortalama QoS
+- 24 saatlik mevsimsel-naif trafik tahmini
+- Basit öneri motoru (düşük-yük ve tepe saatlerde aksiyon önerileri)
 
-# Çözüm
-TWINCELL, her bir baz istasyonu için dijital ikiz oluşturarak edge tabanlı çıkarım
-mekanizmalarını ve yapay zekâ destekli trafik tahminlerini bir araya getirir.
-Bu sayede farklı işletim senaryoları, gerçek ortama uygulanmadan önce
-dijital ortamda değerlendirilebilir.
-
-# Temel Özellikler
-- 5G baz istasyonları için dijital ikiz modelleme
-- Trafik ve enerji davranış simülasyonu
-- What-if (senaryo bazlı) analizler
-- Edge tabanlı karar destek mekanizması
-- Web tabanlı görselleştirme paneli
-
-# Mimari
-Sistem, edge–cloud hibrit bir mimari üzerine kuruludur:
-- Edge: Çıkarım ve yerel karar destek
-- Cloud: Orkestrasyon, simülasyon ve görselleştirme
-
-# Ekip
-- AI / Dijital İkiz ve Simülasyon Mühendisi  
-- Edge / Sistem ve Demo Mühendisi
+## Kurulum
+Önkoşullar: Python 3.10+ (öneri: 3.11), pip

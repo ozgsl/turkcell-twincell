@@ -1,7 +1,21 @@
+# Python
 __pycache__/
-.env
 *.pyc
-.idea/
-.vscode/
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+.env
+dist/
+build/
+
+# Streamlit
+.streamlit/
+
+# OS
 .DS_Store
-outputs/*.json
+Thumbs.db
+
+# Tools
+.pytest_cache/
+.ipynb_checkpoints/
